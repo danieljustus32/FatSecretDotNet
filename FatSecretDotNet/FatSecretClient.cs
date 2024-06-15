@@ -1,5 +1,3 @@
-using System.Net.Http.Json;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using FatSecretDotNet.Authentication;
 using FatSecretDotNet.RequestObjects;

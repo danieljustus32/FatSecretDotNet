@@ -6,7 +6,7 @@ namespace FatSecretDotNet.ResponseObjects
     {
         public SearchRecipes Recipes { get; set; }
     }
-    
+
     public class SearchRecipeNutrition
     {
         public string Calories { get; set; }
@@ -20,16 +20,17 @@ namespace FatSecretDotNet.ResponseObjects
         public string RecipeDescription { get; set; }
         public string RecipeId { get; set; }
         public string RecipeImage { get; set; }
+        public List<string> RecipeIngredients { get; set; }  // Changed to match example structure
         public string RecipeName { get; set; }
         public SearchRecipeNutrition RecipeNutrition { get; set; }
-        public string RecipeUrl { get; set; }
+        public List<string> RecipeTypes { get; set; }  // Changed to match example structure
     }
 
     public class SearchRecipes
     {
         public string MaxResults { get; set; }
         public string PageNumber { get; set; }
-        public List<Recipe> Recipe { get; set; }
+        public List<SearchRecipe> Recipe { get; set; }
         public string TotalResults { get; set; }
     }
 }
